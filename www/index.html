@@ -14,7 +14,7 @@
     <body>
         <div class="wrapper">
             <div class="banner">
-                <h1>HiChat :)</h1>
+                <h1>欢迎来到十影聊天室</h1>
                 <span id="status"></span>
             </div>
             <div id="historyMsg">
@@ -22,29 +22,26 @@
             <div class="controls" >
                 <div class="items">
                     <input id="colorStyle" type="color" placeHolder='#000' title="font color" />
-                    <input id="emoji" type="button" value="emoji" title="emoji" />
+                    <input id="emoji" type="button" value="表情" title="emoji" />
                     <label for="sendImage" class="imageLable">
-                        <input type="button" value="image"  />
-                        <input id="sendImage" type="file" value="image"/>
+                        <input type="button" value="图片"  />
+                        <input id="sendImage" type="file" value="图片"/>
                     </label>
-                    <input id="clearBtn" type="button" value="clear" title="clear screen" />
+                    <input id="clearBtn" type="button" value="清除" title="clear screen" />
                 </div>
-                <textarea id="messageInput" placeHolder="enter to send"></textarea>
-                <input id="sendBtn" type="button" value="SEND">
+                <textarea id="messageInput" placeHolder="点击发送消息"></textarea>
+                <input id="sendBtn" type="button" value="发送">
                 <div id="emojiWrapper">
                 </div>
             </div>
         </div>
         <div id="loginWrapper">
-            <p id="info">connecting to server...</p>
+            <p id="info">连接到服务器...</p>
             <div id="nickWrapper">
-                <input type="text" placeHolder="nickname" id="nicknameInput" />
+                <input type="text" placeHolder="昵称" id="nicknameInput" />
                 <input type="button" value="OK" id="loginBtn" />
             </div>
         </div>
-        <footer>
-            <small>view on <a href="https://github.com/Wayou/HiChat">GitHub</a> | <a href="mailto:liuwayong@gmail.com">contact me</a></small>
-        </footer>
         <script src="/socket.io/socket.io.js"></script>
         <script src="scripts/hichat.js"></script>
         <script>
