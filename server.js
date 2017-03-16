@@ -2,6 +2,8 @@ var express = require('express'),
     app = express(),
     server = require('http').createServer(app),
     io = require('socket.io').listen(server),
+   /* models = require('./models');
+    Users  = models.Users;*/
     users = [];
 //specify the html we will use
 app.use('/', express.static(__dirname + '/www'));
